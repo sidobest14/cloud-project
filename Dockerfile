@@ -8,3 +8,6 @@ COPY ./script.js /usr/local/apache2/htdocs/
 
 # Expose port 80
 EXPOSE 80
+
+# Giving permissions
+RUN chmod -R 755 /usr/local/apache2/htdocs
