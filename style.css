@@ -1,0 +1,75 @@
+/* Set basic styles for the whole page */
+body {
+  font-family: Arial, sans-serif; /* Use Arial as the main font */
+  margin: 0;                     /* Remove default margin */
+  padding: 0;                    /* Remove default padding */
+  min-height: 100vh;            /* Make body take at least full viewport height */
+  display: flex;                /* Use flexbox layout */
+  flex-direction: column;       /* Arrange children (e.g. page-wrapper, status-bar) in a column */
+}
+
+/* Wrapper for the main content area */
+.page-wrapper {
+  flex: 1;                      /* Allow this section to grow and fill available space */
+  padding: 20px;               /* Add padding inside the content area */
+}
+
+/* Container for the tab buttons */
+.tabs {
+  display: flex;               /* Arrange buttons side by side */
+  margin-bottom: 10px;        /* Space below the tab bar */
+  background-color: #eee;     /* Light gray background */
+  padding: 0;                 /* Remove inner spacing */
+}
+
+/* Style for each individual tab button */
+.tab-button {
+  flex: 1;                     /* Make all buttons equal width */
+  padding: 10px;               /* Add space inside the button */
+  background-color: #eee;     /* Light gray background */
+  border: 1px solid #ccc;     /* Light gray border */
+  cursor: pointer;            /* Show pointer cursor on hover */
+  text-align: center;         /* Center text horizontally */
+}
+
+/* Hover effect for tab buttons */
+.tab-button:hover {
+  background-color: #ddd;     /* Slightly darker gray on hover */
+}
+
+/* Style for each tab content container */
+.tab-content {
+  margin-bottom: 10px;        /* Add space below the tab content */
+}
+
+/* Style for the dropdown menu (list of items in a tab) */
+.dropdown {
+  list-style: none;           /* Remove bullet points from the list */
+  padding: 0;                 /* Remove inner padding */
+  margin: 0;                  /* Remove outer margin */
+  background-color: #fff;     /* White background */
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* Subtle shadow around the box */
+  border: 1px solid #ddd;     /* Light gray border */
+  width: 200px;               /* Fixed width */
+}
+
+/* Style for each item in the dropdown list */
+.dropdown li {
+  padding: 10px;              /* Space inside each item */
+  border-bottom: 1px solid #eee; /* Light separator between items */
+  cursor: pointer;            /* Pointer cursor on hover */
+}
+
+/* Hover effect for dropdown items */
+.dropdown li:hover {
+  background-color: #f5f5f5;  /* Light gray background on hover */
+}
+
+/* Style for the status bar at the bottom */
+.status-bar {
+  background-color: #222;     /* Dark background */
+  color: #fff;                /* White text */
+  padding: 10px;              /* Space inside the status bar */
+  text-align: center;         /* Center the text */
+  font-weight: bold;          /* Make text bold */
+}
