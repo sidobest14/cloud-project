@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tabbed Menu Web App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="status-bar top-bar">
+    Welcome to Computer Parts Shop!
+  </div>
+  <div class="page-wrapper">
+    <!-- Navigation Tabs with Dropdowns -->
+    <!-- Tabs -->
+    <div class="tabs">
+      <!-- CPU Tab -->
+      <div class="tab-wrapper">
+        <button class="tab-button" onclick="openTab('cpus')">CPUs</button>
+        <ul class="dropdown">
+          <li onclick="simulateAPICall('Intel Core i9-13900K')">Intel Core i9-13900K</li>
+          <li onclick="simulateAPICall('AMD Ryzen 9 7950X')">AMD Ryzen 9 7950X</li>
+          <li onclick="simulateAPICall('Intel Core i5-13600K')">Intel Core i5-13600K</li>
+        </ul>
+      </div>
+
+      <!-- GPU Tab -->
+      <div class="tab-wrapper">
+        <button class="tab-button" onclick="openTab('gpus')">GPUs</button>
+        <ul class="dropdown">
+          <li onclick="simulateAPICall('NVIDIA RTX 4090')">NVIDIA RTX 4090</li>
+          <li onclick="simulateAPICall('AMD Radeon RX 7900 XTX')">AMD Radeon RX 7900 XTX</li>
+          <li onclick="simulateAPICall('NVIDIA RTX 4070 Ti')">NVIDIA RTX 4070 Ti</li>
+        </ul>
+      </div>
+
+      <!-- RAM Tab -->
+      <div class="tab-wrapper">
+        <button class="tab-button" onclick="openTab('ram')">RAM</button>
+        <ul class="dropdown">
+          <li onclick="simulateAPICall('Corsair Vengeance 32GB DDR5')">Corsair Vengeance 32GB DDR5</li>
+          <li onclick="simulateAPICall('G.Skill Trident Z5 RGB 64GB')">G.Skill Trident Z5 RGB 64GB</li>
+        </ul>
+      </div>
+
+      <!-- Storage Tab -->
+      <div class="tab-wrapper">
+        <button class="tab-button" onclick="openTab('storage')">Storage</button>
+        <ul class="dropdown">
+          <li onclick="simulateAPICall('Samsung 990 Pro 1TB NVMe')">Samsung 990 Pro 1TB NVMe</li>
+          <li onclick="simulateAPICall('WD Black SN850X 2TB')">WD Black SN850X 2TB</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Content container -->
+    <div class="content">
+      <h4>Select a component to view details</h4>
+    </div>
+
+    <!-- Status bar -->
+    <div id="status-bar" class="status-bar">Status: Ready</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
