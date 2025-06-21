@@ -16,10 +16,7 @@ A lightweight, responsive web application featuring a **tabbed interface** and *
 
 To deploy and run the application using Docker, use the following command in your terminal:
 
-docker pull sidobest14/cloud-project
+"docker pull sidobest14/computer-shop"
 
-Then run the container:
+Then run the container
 
-docker run -d -p 8080:80 sidobest14/cloud-project
-
-Your app will be accessible at: http://localhost:8080
