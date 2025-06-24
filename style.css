@@ -48,21 +48,6 @@ html {
 }
 
 
-/* === Tab Title Styling === */
-#tab-title {
-  font-size: 2rem;
-  /* Large font size */
-  font-weight: bold;
-  /* Makes the text bold */
-  color: #1a1a1a;
-  /* Very dark gray color */
-  text-align: center;
-  /* Centers the text horizontally */
-  margin-bottom: 30px;
-  /* Adds space below the title */
-}
-
-
 /* === Tabs Container === */
 .tabs {
   margin-top: 20PX;
